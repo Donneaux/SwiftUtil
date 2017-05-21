@@ -1,9 +1,9 @@
 import BigInt
 import Darwin
-struct SwiftUtil {
-
-    var text = "Hello, World!"
-    func readInt(_ s : String) -> BigInt {
-	    return BigInt(Int(readLine()!)!)
-    }
+func readInt(_ s : String) -> BigInt {
+    print(s, terminator: "")
+    return BigInt(Int(readLine()!)!)
+}
+func <(left: BigInt, right: Int) -> Bool {
+    return left < BigInt(right)
 }
