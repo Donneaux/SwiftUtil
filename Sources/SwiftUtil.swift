@@ -1,7 +1,7 @@
 import BigInt
 import Darwin
 public class SwiftUtil {
-    static func readInt(_ s : String) -> BigInt {
+    public static func readInt(_ s : String) -> BigInt {
         print(s, terminator: "")
         return BigInt(Int(readLine()!)!)
     }
