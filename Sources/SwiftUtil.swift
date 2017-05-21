@@ -1,11 +1,11 @@
 import BigInt
 import Darwin
-public extension SwiftUtil {
-    func readInt(_ s : String) -> BigInt {
+public class SwiftUtil {
+    static func readInt(_ s : String) -> BigInt {
         print(s, terminator: "")
         return BigInt(Int(readLine()!)!)
     }
-    func <(left: BigInt, right: Int) -> Bool {
-        return left < BigInt(right)
-    }
+//    func <(left: BigInt, right: Int) -> Bool {
+//        return left < BigInt(right)
+//    }
 }
