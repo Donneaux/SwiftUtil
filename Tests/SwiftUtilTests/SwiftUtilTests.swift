@@ -1,11 +1,11 @@
 import XCTest
-@testable import util
+@testable import SwiftUtil
 
-class utilTests: XCTestCase {
+class SwiftUtilTests: XCTestCase {
     func testExample() {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
-        XCTAssertEqual(util().text, "Hello, World!")
+        XCTAssertEqual(SwiftUtil().text, "Hello, World!")
     }
 
 
