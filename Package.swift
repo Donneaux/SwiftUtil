@@ -3,5 +3,6 @@
 import PackageDescription
 
 let package = Package(
-    name: "util"
+    name: "donnoeSwiftUtil",
+    .Package(url: "https://github.com/lorentey/BigInt.git", majorVersion: 2, minor: 1)
 )
