@@ -7,3 +7,6 @@ public func readInt(_ s : String) -> BigInt {
 public func <(left: BigInt, right: Int) -> Bool {
     return left < BigInt(right)
 }
+public func toInt(_ bigInt : BigInt) -> Int {
+    return Int(bigInt.toIntMax())
+}
