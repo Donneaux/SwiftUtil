@@ -40,8 +40,8 @@ public func ==(left: Int, right: BigInt) -> Bool {
 public func !=(left: Int, right: BigInt) -> Bool {
     return BigInt(left) != right
 }
-public func -(left: Int, right: BigInt) -> Int {
-    return toInt(BigInt(left) - right)
+public func -(left: Int, right: BigInt) -> BigInt {
+    return BigInt(left) - right
 }
 public func toInt(_ bigInt : BigInt) -> Int { 
     return Int(bigInt.toIntMax()) 
