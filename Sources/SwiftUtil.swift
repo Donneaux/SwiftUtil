@@ -40,22 +40,22 @@ public func ==(left: Int, right: BigInt) -> Bool {
 public func !=(left: Int, right: BigInt) -> Bool {
     return BigInt(left) != BigInt(right)
 }
-public func &-(left: Int, right: BigInt) -> BigInt {
+public func -(left: Int, right: BigInt) -> BigInt {
     return BigInt(left) - BigInt(right)
 }
-public func &-(left: BigInt, right: Int) -> BigInt {
+public func -(left: BigInt, right: Int) -> BigInt {
     return BigInt(left) - BigInt(right)
 }
-public func &+(left: Int, right: BigInt) -> BigInt {
+public func +(left: Int, right: BigInt) -> BigInt {
     return BigInt(left) + BigInt(right)
 }
-public func &+(left: BigInt, right: Int) -> BigInt {
+public func +(left: BigInt, right: Int) -> BigInt {
     return BigInt(left) + BigInt(right)
 }
-public func &*(left: Int, right: BigInt) -> BigInt {
+public func *(left: Int, right: BigInt) -> BigInt {
     return BigInt(left) * BigInt(right)
 }
-public func &*(left: BigInt, right: Int) -> BigInt {
+public func *(left: BigInt, right: Int) -> BigInt {
     return BigInt(left) * BigInt(right)
 }
 public func /(left: Int, right: BigInt) -> BigInt {
