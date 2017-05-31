@@ -5,43 +5,46 @@ public func readInt(_ s : String) -> BigInt {
     return BigInt(Int(readLine()!)!)
 }
 public func <(left: BigInt, right: Int) -> Bool {
-    return left < BigInt(right)
+    return BigInt(left) < BigInt(right)
 }
 public func <=(left: BigInt, right: Int) -> Bool {
-    return left <= BigInt(right)
+    return BigInt(left) <= BigInt(right)
 }
 public func >(left: BigInt, right: Int) -> Bool {
-    return left > BigInt(right)
+    return BigInt(left) > BigInt(right)
 }
 public func >=(left: BigInt, right: Int) -> Bool {
-    return left >= BigInt(right)
+    return BigInt(left) >= BigInt(right)
 }
 public func ==(left: BigInt, right: Int) -> Bool {
-    return left == BigInt(right)
+    return BigInt(left) == BigInt(right)
 }
 public func !=(left: BigInt, right: Int) -> Bool {
-    return left != BigInt(right)
+    return BigInt(left) != BigInt(right)
 }
 public func <(left: Int, right: BigInt) -> Bool {
-    return BigInt(left) < right
+    return BigInt(left) < BigInt(right)
 }
 public func <=(left: Int, right: BigInt) -> Bool {
-    return BigInt(left) <= right
+    return BigInt(left) <= BigInt(right)
 }
 public func >(left: Int, right: BigInt) -> Bool {
-    return BigInt(left) > right
+    return BigInt(left) > BigInt(right)
 }
 public func >=(left: Int, right: BigInt) -> Bool {
-    return BigInt(left) >= right
+    return BigInt(left) >= BigInt(right)
 }
 public func ==(left: Int, right: BigInt) -> Bool {
-    return BigInt(left) == right
+    return BigInt(left) == BigInt(right)
 }
 public func !=(left: Int, right: BigInt) -> Bool {
-    return BigInt(left) != right
+    return BigInt(left) != BigInt(right)
 }
 public func -(left: Int, right: BigInt) -> BigInt {
-    return BigInt(left) - right
+    return BigInt(left) - BigInt(right)
+}
+public func -(left: BigInt, right: Int) -> BigInt {
+    return BigInt(left) - BigInt(right)
 }
 public func toInt(_ bigInt : BigInt) -> Int { 
     return Int(bigInt.toIntMax()) 
