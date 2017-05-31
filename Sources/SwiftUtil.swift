@@ -49,19 +49,19 @@ public func &-(left: BigInt, right: Int) -> BigInt {
 public func &+(left: Int, right: BigInt) -> BigInt {
     return BigInt(left) + BigInt(right)
 }
-public func &+(left: Int, right: BigInt) -> BigInt {
+public func &+(left: BigInt, right: Int) -> BigInt {
     return BigInt(left) + BigInt(right)
 }
 public func &*(left: Int, right: BigInt) -> BigInt {
     return BigInt(left) * BigInt(right)
 }
-public func &*(left: Int, right: BigInt) -> BigInt {
+public func &*(left: BigInt, right: Int) -> BigInt {
     return BigInt(left) * BigInt(right)
 }
 public func /(left: Int, right: BigInt) -> BigInt {
     return BigInt(left) / BigInt(right)
 }
-public func /(left: Int, right: BigInt) -> BigInt {
+public func /(left: BigInt, right: Int) -> BigInt {
     return BigInt(left) / BigInt(right)
 }
 public func toInt(_ bigInt : BigInt) -> Int { 
